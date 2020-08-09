@@ -20,6 +20,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   outline: none;
   
+  /* perspective: 500px; */
+  
 }
 a:link {
     text-decoration: none;
@@ -27,19 +29,14 @@ a:link {
 }
 
 @media only screen and (max-width: 50em) {
-    html {
-        font-size: 50%;
-    }
+    html { font-size: 50%; }
 }
 @media only screen and (max-width: 30em) {
-    html {
-        font-size: 30%;
-    }
+    html { font-size: 30%; }
 }
 
 nav {
     position: fixed;
-    top: 0;
     width: 100%;
     padding: 1rem 3rem;
     background-color: transparent;
@@ -54,13 +51,11 @@ nav {
 }
 .nav_right {
     flex-grow: 1;
-    
+   
     display: flex; 
     align-items: center; 
-    justify-content: space-between;
+    justify-content: flex-end;
     
-    
-    margin-left: 35rem;
 }
                                                                                                                                                                                                                             
 .nav_left a {
@@ -83,8 +78,7 @@ nav {
 
 
 .search {
-    flex-grow: 1;
-    /* width: 70%; */
+    width: 40%;
     margin-right: 2rem;
     background-color: #fff;
     border-radius: 25px;
@@ -92,10 +86,11 @@ nav {
 }
 
 .search input {
-    width: 93%;
+    width: 90%;
     padding: 1rem;
     border-radius: 25px;
     border: none;
+    outline: none;
 }
 .search .icon {
     color: #000;
@@ -118,7 +113,6 @@ nav {
     background-color: #485EC4;
     color: #fff;
 }
-
 
 .watch_tv {
     display: flex;
@@ -149,29 +143,6 @@ nav {
     margin: 1rem 0 2rem 0;
 }
 
-@media only screen and (max-width: 940px) {
-    .watch_tv h1 {
-        font-size: 3.5rem;
-        
-    }
-    .watch_tv p {
-        font-size: 1.5rem;
-        margin: 1rem 0;
-    }
-}
-@media only screen and (max-width: 630px) {
-    .watch_tv {
-        height: auto;
-        padding: 2rem;
-        letter-spacing: normal;
-    }
-    .watch_tv h1 {
-        font-size: 3rem;
-        
-    }
-}
-
-
 .slide {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -195,30 +166,10 @@ nav {
     display: block;
 }
 
-@media only screen and (max-width: 800px) {
-    .slide {
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: .5rem;
-    }
-    .slide_one {
-        width: 100%;
-        height: auto;
-        padding: 1rem;
-        box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-        text-align: center;
-        
-        margin-bottom: 2rem;
-    }
-}
-@media only screen and (max-width: 500px) {
-    .slide {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-}
 
 .slide_one:hover {
-    transform: translateY(-12px);
+
+    transform: scale(1.05, 1.1);
 }
 
 figcaption {
@@ -267,11 +218,6 @@ figcaption {
     font-weight: 400;
 }
 
-@media only screen and (max-width: 50em) {
-    .footer {
-        flex-direction: column;
-    }
-}
 
 .aaa {
     background-image: url('images/appstore-google-play-3.jpg');
@@ -306,4 +252,78 @@ figcaption {
     font-weight: normal;
     padding: 2rem 3rem;
     background-color: #2F353B;
+}
+
+.store {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 800px) {
+    .slide {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: .5rem;
+    }
+    .slide_one {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+        text-align: center;
+        
+        margin-bottom: 2rem;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .slide { grid-template-columns: repeat(3, 1fr); }
+
+}
+
+@media only screen and (max-width: 940px) {
+    nav { 
+        display: block;
+        padding: 0;
+    }
+    .nav_left { display: none;}
+    .btn a { display:  none;}
+    .moon { display: none; }
+    .search .icon { display: none; }
+    .nav_right { display: block;}
+    .search { 
+        width: 100%;
+        border-radius: 0;
+        margin-right: 0;
+    }
+    .search input {
+        width: 100%;
+        padding: 3rem;
+        border-radius: 0;
+        box-shadow: 0 1px 4px 0 rgba(152,152,152,.5);
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .watch_tv h1 { font-size: 3.5rem;}
+    .watch_tv p {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+}
+@media only screen and (max-width: 630px) {
+    .watch_tv {
+        height: auto;
+        padding: 2rem;
+        letter-spacing: normal;
+    }
+    
+    .watch_tv h1 { font-size: 3rem; }
+}
+
+
+@media only screen and (max-width: 50em) {
+    .footer { flex-direction: column; }
+    .store { width: 40%;}
 }
