@@ -141,6 +141,13 @@ section{
     padding: 10px;
 }
 
+.card .card-footer p{
+    color: #6b6868;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
 section h3{
 
     margin-bottom: 20px;
