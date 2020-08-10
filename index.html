@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Envivo television</title>
+        <link href="//db.onlinewebfonts.com/c/961a181da27e7cbc072ec2fb5bbfe2a9?family=Circular+Std+Bold" rel="stylesheet" type="text/css"/>
+        <link href="//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book" rel="stylesheet" type="text/css"/>
+        <link href="//db.onlinewebfonts.com/c/280483fe8ab9beaf3337681ec871bff0?family=Circular+Std+Medium" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <nav id="nav">
+            <div class="nav_left">
+                <a href="#"><img src="captures/logo.PNG" alt="Envivo logo"></a>
+                <a href="#">Quickies</a>
+                <a href="#">Series</a>
+            </div>
+            <div class="nav_right">
+                <span class="search">
+                    <input type="text" placeholder="Titles, Categories, Genres" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </span>
+                <span id="moon" class="moon">&#9790;</span>
+                <span class="btn"><a style="font-family: Circular Std book;" href="#">Sign In / Sign Up</a></span>
+            </div>
+        </nav>
+
+        <main>
+            <section>
+                <div class="movie-container">
+                    <div class="movie faint">
+                        <img class="image" src="captures/joel-muniz-_MzHiLDesRs-unsplash.jpg">
+                        <span> </span>
+                        <div class="caption">
+                            <h3><pre><i class="fa fa-play-circle"></i> The Billionaire's Estate - S1 E01</pre></h3>
+                            <p>Great Men Of The Universe</p>
+                        </div>
+                    </div>
+                    <div class="movie faint">
+                        <img class="image" src="captures/ilyuza-mingazova-rlrtf2X08CI-unsplash.jpg">
+                        <div class="caption">
+                            <h3><pre><i class="fa fa-play-circle"></i> The Wonderful Maiden - S1 E01</pre></h3>
+                            <p>The Queen Of Beauty</p>
+                        </div>
+                    </div>
+                    <div class="movie faint">
+                      <img class="image" src="captures/xps-4TBSG2Oqu0Q-unsplash.jpg">
+                      <div class="caption">
+                            <h3><pre><i class="fa fa-play-circle"></i> The Evolution Of Technology - S1 E01</pre></h3>
+                            <p>The Universe Is A Single Entity</p>
+                      </div>
+                    </div>
+                    
+                    <a style="font-size: 40px;" class="previous" onclick="addSlide(-1)">&#10094;</a>
+                    <a style="font-size: 40px;" class="next" onclick="addSlide(1)">&#10095;</a>
+                </div>
+            </section>
+
+            <section class="movie_grid" style="margin-top: -5px;">
+                <header class="producer">nvivoTV Originals</header>
+                <div class="slide">
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/chris-blonk-2zRuy4g9YUw-unsplash.jpg" >
+                        <figcaption>
+                            <h3>Quantum Entanglement</h3>
+                        </figcaption>
+                    </figure>
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/ilyuza-mingazova-rlrtf2X08CI-unsplash.jpg" >
+                        <figcaption>
+                            <h3>The Beautiful Maiden</h3>
+                        </figcaption>
+                    </figure>
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/joel-muniz-_MzHiLDesRs-unsplash.jpg" >
+                        <figcaption>
+                            <h3>Real Estate Businesses in Nigeria</h3>
+                        </figcaption>
+                    </figure>
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/xps-4TBSG2Oqu0Q-unsplash.jpg" >
+                        <figcaption>
+                            <h3>Technology Advancement</h3>
+                        </figcaption>
+                    </figure>
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/chris-blonk-2zRuy4g9YUw-unsplash.jpg" >
+                        <figcaption>
+                            <h3>Quantum Entanglement</h3>
+                        </figcaption>
+                    </figure>
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/ilyuza-mingazova-rlrtf2X08CI-unsplash.jpg" >
+                        <figcaption>
+                            <h3>The Beautiful Maiden</h3>
+                        </figcaption>
+                    </figure>
+                </div>
+                
+                
+                <header class="producer">Bollywood juju</header>
+                <div class="slide">
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/joel-muniz-_MzHiLDesRs-unsplash.jpg" >
+                        <figcaption>
+                            <h3>Real Estate Businesses in Nigeria</h3>
+                        </figcaption>
+                    </figure>
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/xps-4TBSG2Oqu0Q-unsplash.jpg" >
+                        <figcaption>
+                            <h3>Technology Advancement</h3>
+                        </figcaption>
+                    </figure>
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/chris-blonk-2zRuy4g9YUw-unsplash.jpg" >
+                        <figcaption>
+                            <h3>Quantum Entanglement</h3>
+                        </figcaption>
+                    </figure>
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/ilyuza-mingazova-rlrtf2X08CI-unsplash.jpg" >
+                        <figcaption>
+                            <h3>The Beautiful Maiden</h3>
+                        </figcaption>
+                    </figure>
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/joel-muniz-_MzHiLDesRs-unsplash.jpg" >
+                        <figcaption>
+                            <h3>Real Estate Businesses in Nigeria</h3>
+                        </figcaption>
+                    </figure>
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/xps-4TBSG2Oqu0Q-unsplash.jpg" >
+                        <figcaption>
+                            <h3>Technology Advancement</h3>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <header class="producer">Top Trending Shows</header>
+                <div class="slide">
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/chris-blonk-2zRuy4g9YUw-unsplash.jpg" >
+                        <figcaption>
+                            <h3>Quantum Entanglement</h3>
+                        </figcaption>
+                    </figure>
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/ilyuza-mingazova-rlrtf2X08CI-unsplash.jpg" >
+                        <figcaption>
+                            <h3>The Beautiful Maiden</h3>
+                        </figcaption>
+                    </figure>
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/joel-muniz-_MzHiLDesRs-unsplash.jpg" >
+                        <figcaption>
+                            <h3>Real Estate Businesses in Nigeria</h3>
+                        </figcaption>
+                    </figure>
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/xps-4TBSG2Oqu0Q-unsplash.jpg" >
+                        <figcaption>
+                            <h3>Technology Advancement</h3>
+                        </figcaption>
+                    </figure>
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/chris-blonk-2zRuy4g9YUw-unsplash.jpg" >
+                        <figcaption>
+                            <h3>Quantum Entanglement</h3>
+                        </figcaption>
+                    </figure>
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/ilyuza-mingazova-rlrtf2X08CI-unsplash.jpg" >
+                        <figcaption>
+                            <h3>The Beautiful Maiden</h3>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <header class="producer">Quickies</header>
+                <div class="slide">
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/joel-muniz-_MzHiLDesRs-unsplash.jpg" >
+                        <figcaption>
+                            <h3>Real Estate Businesses in Nigeria</h3>
+                        </figcaption>
+                    </figure>
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/xps-4TBSG2Oqu0Q-unsplash.jpg" >
+                        <figcaption>
+                            <h3>Technology Advancement</h3>
+                        </figcaption>
+                    </figure>
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/chris-blonk-2zRuy4g9YUw-unsplash.jpg" >
+                        <figcaption>
+                            <h3>Quantum Entanglement</h3>
+                        </figcaption>
+                    </figure>
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/ilyuza-mingazova-rlrtf2X08CI-unsplash.jpg" >
+                        <figcaption>
+                            <h3>The Beautiful Maiden</h3>
+                        </figcaption>
+                    </figure>
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/joel-muniz-_MzHiLDesRs-unsplash.jpg" >
+                        <figcaption>
+                            <h3>Real Estate Businesses in Nigeria</h3>
+                        </figcaption>
+                    </figure>
+                    <figure class="initialSlide">
+                        <img class="movie_image" src="captures/xps-4TBSG2Oqu0Q-unsplash.jpg" >
+                        <figcaption>
+                            <h3>Technology Advancement</h3>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+
+            <div class="background umbra">
+                <h6 class="background-text">Watch TV Anywhere, Any Device, Anytime</h6>
+                <p class="background-text">Watch your daily dose of entertainment anytime you want it on our Andriod & iOS apps.    </p>
+                <a class="background-text" href="#"><img src="captures/appstore-google.png" alt="Google and Apple playstore"></a>
+            </div>
+        </main>
+
+        <footer>
+            <div class="social">
+                <span class="social-media title">Connect with us</span>
+                <div class="media">
+                <a href="#" id="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" id="twitter"><i class="fa fa-twitter-square"></i></a>
+                <a href="#" id="instagram"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+                    
+            <div class="terms-detail">
+                <ul>
+                    <li class="terms title">General</li>
+                    <li class="terms-list"><a href="#">About Us</a></li>
+                    <li class="terms-list"><a href="#">Terms and Conditions</a></li>
+                    <li class="terms-list"><a href="#">Publishing License</a></li>
+                    <li class="terms-list"><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="category-detail">
+                <ul>
+                    <li class="category title">Categories</li>
+                    <li class="category-list"><a href="#">Quickies</a></li>
+                    <li class="category-list"><a href="#">Series</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-detail">
+                <ul>
+                    <li class="contact title">Contact</li>
+                    <li class="contact-list" id="contact"><a href="#">Contact Us</a> </li>
+                    <li class="contact-list"><pre><i class="fa fa-phone" style="font-size:20px"></i> +2348162230780</pre></li>
+                    <li class="contact-list" id="contact-list"><pre><i class="fa fa-envelope"></i><a href="#"> support@nvivo.tv</a></pre></li>
+                </ul>
+            </div>
+
+            <div class="apps-detail">
+                <span class="apps title">App Stores</span>
+                <a href="#"><img src="captures/appstore-google.png" alt="Google & Apple playstore"></a>
+            </div>
+        </footer>
+        <div class="foot-note">
+            <p>Copyright @ 2020 nvivo.tv</p>
+        </div>
+    </body>
+</html>
