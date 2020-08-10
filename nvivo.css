@@ -60,6 +60,7 @@ nav .nav-right .fa-search, .fa-moon-o{
     font-size: 20px;
     margin: 8px;
 }
+
 .nav-right .signin{
     background-color: blue;
     padding: 10px;
@@ -76,9 +77,16 @@ nav .nav-right .fa-search, .fa-moon-o{
 header img{
 
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     object-position: center;
     object-fit: fill;
+    box-shadow: #383636;
+
+}
+
+header .fa-chevron-left, .fa-chevron-right{
+
+    color: rgb(31, 31, 29)
 }
 
 a{
