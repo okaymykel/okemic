@@ -74,8 +74,14 @@ nav .nav-right .fa-search, .fa-moon-o{
 
 }
 
+header{
+
+    width: 100%;
+}
+
 header img{
     height: 80vh;
+    width: 100%;
     object-position: center;
     object-fit: fill;
     box-shadow: #383636;
