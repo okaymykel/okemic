@@ -1,1 +1,1 @@
-<?php hearder('location: /index.html');?>
+<?php hearder('Location: /index.html');?>
