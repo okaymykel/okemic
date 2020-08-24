@@ -1,0 +1,1 @@
+<?php hearder('location: /index.html');?>
