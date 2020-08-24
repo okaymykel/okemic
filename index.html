@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Second Project</title>
     <link rel="stylesheet" href="task2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="nav-wrapper">
@@ -19,7 +20,7 @@
                     <li>HOME</li>
                     <li>BLOG</li>
                     <li>FEATURE</li>
-                    <li>ABOUT</li>
+                    <li class="about">ABOUT</li>
                     <li>CONTACT</li>
                 </div>
 
@@ -27,9 +28,8 @@
 
                     <div class="nav-search">
                         <i class="fas fa-search"></i>
-                    </div>
-
-                    <div class="nav-social">
+                    </div> 
+                    <div class="nav-social">|
 
                         <li><i class="fab fa-facebook-f"></i></li>
                         <li><i class="fab fa-twitter"></i></li>
@@ -47,7 +47,7 @@
     <hr>
 
     <div class="top-left">
-        <a href=""><i class="fas fa-home"></i></a><i class="fas fa-angle-right"></i>
+        <a href=""><i class="fas fa-home"></i> Home</a> <i class="fas fa-angle-right"></i>
         <a href="">About</a>
     </div>
 
@@ -113,14 +113,14 @@
                     </div>
 
                     <div class="col-body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, voluptatibus!
+                        <p class="side">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, voluptatibus!
                             Obcaecati quisquam eveniet porro enim natus voluptas neque similique officia qui 
                             dignissimos vero laboriosam nulla, sapiente libero veritatis! Eveniet, odit.
                         </p>
 
-                        <p> <i class="fas fa-map-marker-alt"></i> 5, South Main Street, Los Angelos, Us.</p>
-                        <p> <i class="fas fa-mobile-alt"></i> 125-711-811</p>
-                        <p> <i class="fas fa-headphones"></i> suppot.hosting@gmail.com</p>
+                        <p class="side"> <i class="fas fa-map-marker-alt"></i> 5, South Main Street, Los Angelos, Us.</p>
+                        <p class="side"> <i class="fas fa-mobile-alt"></i> 125-711-811</p>
+                        <p class="side"> <i class="fas fa-headphones"></i> suppot.hosting@gmail.com</p>
                     </div>
                 </div>
 
@@ -137,7 +137,7 @@
 
                         <div class="base-right">
                            
-                            <p><b></b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, quae!</p>
+                            <p><b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, quae!</b></p>
                             <p><i class="far fa-clock"></i> Wed 02, 2019.</p>
                             
                         </div>
@@ -177,14 +177,21 @@
                     </div>
 
                     <div class="tags">
-                        <a href="">Gutenews</a>
-                        <a href="">Lifestyles</a>
-                        <a href="">Fashion</a><br>
+                        <div class="first-tags">
+                            <a href="">Gutenews</a>
+                            <a href="">Lifestyles</a>
+                            <a href="">Fashion</a>
+                        </div>
+
+                       <div class="second-tags">
                         <a href="">Technology</a>
                         <a href="">Food</a>
                         <a href="">Travel</a>
+                       </div>
+                        
+                    
                     </div>
-                    <div class="social-icon">
+                    <div class="social-icons">
                         <li><i class="fab fa-facebook-f"></i></li>
                         <li><i class="fab fa-twitter"></i></li>
                         <li><i class="fab fa-youtube"></i></li>
