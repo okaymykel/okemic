@@ -54,7 +54,7 @@ nav .wrapper .nav-list{
 .top-left{
     margin-top: 30px;
     color: rgb(27, 25, 25);
-    margin-left: 75px;
+    margin-left: 80px;
 }
 
 .top-left a{
@@ -96,6 +96,14 @@ nav .wrapper .nav-right .nav-social li{
     margin: 10px;
 }
 
+hr{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 100px;
+    box-shadow: black;
+}
 .first-section{
     display: flex;
     justify-content: space-around;
@@ -106,6 +114,7 @@ nav .wrapper .nav-right .nav-social li{
 
 .first-section img{
     margin-right: 40px;
+    margin-left: 40px;
 }
 
 .first-section .first-right{
@@ -293,6 +302,10 @@ section{
 
     color: rgb(160, 50, 92);
 
+}
+
+.fa-map-marker-alt, .fa-mobile-alt, .fa-headphones{
+    color: rgb(235, 216, 49);
 }
 
 
