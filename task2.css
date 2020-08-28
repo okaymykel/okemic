@@ -5,6 +5,18 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.nav-wrapper{
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.body-wrapper{
+
+    width: 1160px;
+    justify-items: center;
+    margin: 0 auto;
+}
+
 nav{
     display: flex;
     box-sizing: border-box;
@@ -54,7 +66,8 @@ nav .wrapper .nav-list{
 .top-left{
     margin-top: 30px;
     color: rgb(27, 25, 25);
-    margin-left: 80px;
+    margin-left: 175px;
+    
 }
 
 .top-left a{
@@ -119,10 +132,11 @@ hr{
 
 .first-section .first-right{
 
-    margin: 30px;
+    margin: 35px;
+    
 }
 
-.first-section .first-right h4, h5, p, .social-icons{
+.first-section .first-right h3, h5, p, .social-icons{
     margin-bottom: 15px;
 }
 
@@ -138,6 +152,7 @@ hr{
 .first-section .first-right .social-icons .fa-facebook-f{
 
     color: rgba(9, 22, 199, 0.493);
+    margin-left: 0px;
 
 }
 
@@ -165,6 +180,7 @@ hr{
     background-color:  rgba(235, 235, 247, 0.849);
     justify-content: space-around;
     align-items: center;
+    margin-left: 45px;
 
 }
 
@@ -173,30 +189,36 @@ hr{
     padding: 7px;
     border: 1px solid  rgba(235, 235, 247, 0.849);
     border-radius: 5px;
+    width: 300px;
+    height: 2.8em;
 
 }
 
 .second .right button{
 
     padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
     border-radius: 5px;
     background-color: rgb(235, 216, 49);
     border: 1px solid rgb(235, 216, 49);
+    height: 2.6em;
 
 
 }
 
 .img-group{
     display: flex;
-    width: 100%;
+    width: 1160px;
     margin: 0 auto;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: 21px;
 }
 
 .img-group img{
-    width: 269px;
-    height: 250px;
+    width: 222px;
+    height: 220px;
 }
 
 section{
@@ -209,9 +231,52 @@ section{
 .base-level{
     display: flex;
     justify-content: center;
-    margin-left: 50px;
+    margin-left: 40px;
 
 }
+
+.base-col h4:after{
+  
+    content: "";
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: rgb(136, 129, 129);
+    position: absolute;
+    right: 0;
+    margin-right: 160px;
+    top: 147%;
+    
+}
+
+.base-col-1 h4:after{
+
+    content: "";
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: rgb(136, 129, 129);
+    position: absolute;
+    right: 0;
+    margin-right: 500px;
+    top: 147%;
+    
+}
+
+.base-col .line:after{
+
+    content: "";
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: rgb(136, 129, 129);
+    position: absolute;
+    right: 0;
+    margin-right: 920px;
+    top: 147%;
+}
+
+
 
 .base-level .base-col, .base-col-1{
    display: flex;
@@ -314,13 +379,19 @@ section{
     margin-right: 20px;
 }
 
-.col-body p .side{
-    color:  rgba(21, 21, 22, 0.699);
+.col-body .side{
+    color:  rgba(51, 51, 56, 0.699);
 }
 
 .col-body p{
     font-size: 15px;
 }
+
+.col-body p span{
+
+    color:  rgba(139, 139, 145, 0.699);
+}
+
 
 .col-body img{
     width: 70px;
@@ -330,6 +401,11 @@ section{
 
 .heading{
     display: flex;
+}
+
+.follow{
+    margin-left: 6px;
+    margin-top: 15px;
 }
 
 .footer-wrapper{
