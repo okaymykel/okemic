@@ -414,10 +414,17 @@ section{
     justify-content: center;
     align-items: center;
     padding: 10px;
+   
+}
+
+.foot{
+    width: 1120px;
+    margin: 0 auto;
+    margin-left: 135px;
+    margin-right: 140px;
 }
 
 @media only screen and (max-width: 760px) {
-
     *{
         margin: 0;
         padding: 0;
@@ -565,6 +572,47 @@ section{
         justify-content: center;
         align-items: center;
         width: 280px;
+    }
+    
+    .base-col h4:after{
+  
+        content: "";
+        display: block;
+        width: 200px;
+        height: 1px;
+        background-color: rgb(136, 129, 129);
+        position: absolute;
+        right: 0;
+        margin-right: 160px;
+        top: 147%;
+        
+    }
+    
+    .base-col-1 h4:after{
+    
+        content: "";
+        display: block;
+        width: 200px;
+        height: 1px;
+        background-color: rgb(136, 129, 129);
+        position: absolute;
+        right: 0;
+        margin-right: 500px;
+        top: 147%;
+        
+    }
+    
+    .base-col .line:after{
+    
+        content: "";
+        display: block;
+        width: 200px;
+        height: 1px;
+        background-color: rgb(136, 129, 129);
+        position: absolute;
+        right: 0;
+        margin-right: 920px;
+        top: 147%;
     }
     
 } 
