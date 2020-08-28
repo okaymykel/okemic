@@ -435,7 +435,7 @@ section{
     nav{
         display: flex;
         box-sizing: border-box;
-        width: 90%;
+        width: 300px;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
@@ -445,7 +445,6 @@ section{
     } 
 
     nav .wrapper{
-
         display: flex;
         flex-wrap: wrap;
         padding: 10px;
@@ -454,6 +453,14 @@ section{
         text-align: justify;
        
     }
+
+    .body-wrapper{
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 auto;
+    }
+
+
     
     nav .wrapper .nav-brand{
     
@@ -505,18 +512,14 @@ section{
 
     .body-wrapper{
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         width: 100%;
     }
 
-    hr{
-
-        
-    }
-
     .first-section img{
-       width: 250px;
-      height: 200px;
+       width: 400px;
+      height: 350px;
       margin-left: 10px;
     }
    
@@ -531,8 +534,7 @@ section{
         display: flex;
         flex-direction: column;
         padding: 15px;
-        width: 100%;
-    }
+        width: 100%;  }
 
     .second .right{
         margin-top: 15px;
@@ -546,8 +548,12 @@ section{
     }
 
     .base-level .col-body{
-        width: 250px;
+        width: 750px;
         text-align: left;
+    }
+
+    .col-body .side{
+        width: 350px;
     }
 
     .tags .first-tags{
@@ -560,12 +566,28 @@ section{
 
     .foot{
         margin-left: 20px;
+        width: 600px;
     }
+
+    .img-group{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        margin-left: 100px;
+    }
+
+    .img-group img{
+        width: 300px;
+        height: 200px;
+    }
+
     .footer-wrapper{
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         text-justify: center;
         align-items: center;
+       
     }
 
     .footer-wrapper p{
@@ -573,9 +595,13 @@ section{
         align-items: center;
         width: 280px;
     }
+
+    .first-right{
+        width: 350px;
+    }
     
     .base-col h4:after{
-  
+        
         content: "";
         display: block;
         width: 200px;
@@ -583,22 +609,22 @@ section{
         background-color: rgb(136, 129, 129);
         position: absolute;
         right: 0;
-        margin-right: 160px;
+        
         top: 147%;
         
     }
     
     .base-col-1 h4:after{
-    
+        
         content: "";
         display: block;
-        width: 200px;
+        width: 150px;
         height: 1px;
         background-color: rgb(136, 129, 129);
-        position: absolute;
+        position: relative;
         right: 0;
-        margin-right: 500px;
-        top: 147%;
+     
+        
         
     }
     
@@ -611,8 +637,10 @@ section{
         background-color: rgb(136, 129, 129);
         position: absolute;
         right: 0;
-        margin-right: 920px;
-        top: 147%;
+       
+        
     }
+
+    
     
 } 
