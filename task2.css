@@ -120,7 +120,7 @@ hr{
     justify-content: center;
     margin-left: 50px;
     margin-right: 100px;
-    box-shadow: black;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .4);
 }
 .first-section{
     display: flex;
@@ -139,6 +139,11 @@ hr{
 
     margin: 35px;
     
+}
+
+.first-right h3{
+    font-weight: 50px;
+    font-size: 32.4px;
 }
 
 .first-section .first-right h3, h5, p, .social-icons{
@@ -451,6 +456,7 @@ section{
     margin: 0 auto;
     margin-left: 135px;
     margin-right: 140px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .4);
 }
 
 
@@ -583,7 +589,7 @@ section{
         justify-content: center;
         margin-left: 50px;
         margin-right: 100px;
-        box-shadow: black;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .4);
     }
     .first-section{
         display: flex;
@@ -916,6 +922,7 @@ section{
         margin: 0 auto;
         margin-left: 135px;
         margin-right: 140px;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .4);
     }
     
 
@@ -1188,12 +1195,14 @@ section{
         margin-right: 0;
         margin-left: 10px;
         width: 350px;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .4);
     }
     
     .foot{
         max-width: 350px;
         margin-left: 10px;
         margin-right: 5px;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .4);
     
     
 } 
