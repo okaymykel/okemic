@@ -1,14 +1,12 @@
 /* global style */
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;   
-}
-
 html {
     box-sizing: border-box;
     font-size: 100%; 
     scroll-behavior: smooth;  
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
@@ -24,7 +22,8 @@ a:link {
     outline: none;
 }
 
-@media only screen and (max-width: 50em) {
+/* Responsive style */
+@media only screen and (max-width: 85em) {
     html { font-size: 50%; }
 }
 @media only screen and (max-width: 30em) {
@@ -33,18 +32,8 @@ a:link {
 
 
 /* navigation bar */
-nav {
-    width: 100%;
-    display: flex;
-}
-
-div {
-    flex: 1 1 auto;
-}
-
 div h3 {
-    padding-left: 5rem;
-    font-size: 1.9rem;
+    font-size: 2rem;
     margin: 0rem;
     margin-top: 1rem;
 }
@@ -57,6 +46,10 @@ div h3 {
     font-weight: 600;
 }
 
+#special{
+    padding-left: 0;
+}
+
 #underline {
     border-bottom: 0.2rem solid hsl(41, 89%, 66%);
     padding-bottom: 0.5rem;
@@ -66,14 +59,6 @@ div h3 {
     margin-left: 0.75rem;
 }
 
-.menu-center {
-    padding-left: 7.5rem;
-}
-
-.menu-right {
-    padding-left: 8.5rem;
-}
-
 .menu-right a, .menu-right span {
     padding: 0.7rem;
     display: inline-block;
@@ -81,13 +66,40 @@ div h3 {
     font-size: 1rem;
 }
 
-hr { 
+.shadow hr { 
     border-top: 0.25rem solid#f5f5f5;
     margin: 0rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     border-left-style: none;
+    border-bottom-style: none;
+    box-shadow: 2px 2px 3px whitesmoke;
 }
+
+/* Responsive style */
+@media only screen and (min-width: 610px){
+    nav {
+        width: 100%;
+        display: flex;
+    }
+    
+    div {
+        flex: 1 1 auto;
+    }
+
+    div h3 {
+        padding-left: 5rem;
+    }
+
+    .menu-center {
+        padding-left: 7.5rem;
+    }
+
+    .menu-right {
+        padding-left: 8.5rem;
+    }
+}
+
 
 /* top header style */
 ul {
@@ -109,12 +121,18 @@ ul a {
     color: black; 
 }
 
+/* Responsive style */
+@media only screen and (max-width: 610px){
+    ul {
+        padding: 0;
+        margin-left: 0;
+    }
+}
+
+
 /* main-header style */
-.main-image img {
-    width: 45%;
-    float: left;
-    margin-right: 3.5rem;
-    margin-left: 3rem;
+.main-image img{
+    width: 85%;
 }
 
 .main-image {
@@ -129,16 +147,18 @@ ul a {
 
 .main-image p {
     line-height: 1.8rem;
-    margin-right: 3.5rem;
+    padding-right: 2rem;
+}
+
+.media {
+    margin: 0 5rem 2rem 0;
 }
 
 .media a {
-    padding: 1rem;
+    padding: 0.5rem;
     background: #f5f5f5;
     border-radius: 100%;
     vertical-align: middle;
-    margin-bottom: 5rem;
-    padding-left: 1.09rem;
     margin-right: 0.8rem;
 }
 
@@ -150,6 +170,32 @@ ul a {
     padding-left: 0.3rem;
     padding-right: 0.3rem;
 }
+
+/* Responsive style */
+@media only screen and (min-width: 610px){
+    .main-image img {
+        width: 45%;
+        float: left;
+        margin-right: 3.5rem;
+        margin-left: 3rem;
+    }
+
+    .media a {
+        padding: 1rem;
+        background: #f5f5f5;
+        border-radius: 100%;
+        vertical-align: middle;
+        margin-bottom: 5rem;
+        padding-left: 1.09rem;
+        margin-right: 0.8rem;
+    }
+
+    .main-image p {
+        line-height: 1.8rem;
+        margin-right: 3.5rem;
+    }
+}
+
 
 /* subscribers layer style */
 .subscribe {
@@ -188,13 +234,55 @@ ul a {
     color:black;
 }
 
+/* Responsive style */
+@media only screen and (max-width: 610px){
+    .subscribe {
+        display: block;
+        margin: 3rem 4rem 2rem 0;
+    }
+
+    .subscribe p, .subscribe h3 {
+        padding: 0.5rem 0 0 1rem;
+        line-height: 0.5rem;
+        font-weight: 400;
+        padding-bottom: 2rem;
+    }
+    
+    #email, #subscribe {
+        width: 65%;
+        border-style: none;
+        margin-top: 1.5rem;
+    }
+    
+    #subscribe {
+        width: 30%;
+        font-size: 2rem;
+        padding-top: 1.5rem;
+    }
+
+    ::placeholder {
+        font-size: 2rem;
+    }
+    
+}
+
+
 /* top main section style */
 .main {
-    display: flex;
-    justify-content: space-between;
-    width: 89%;
-    margin: 4.8rem 5rem 0 4.5rem;
+    width: 70%;
+    margin: 4.8rem 5rem 0 8rem;
 }
+
+/* Responsive style */
+@media only screen and (min-width: 610px){
+    .main {
+        display: flex;
+        justify-content: space-between;
+        width: 89%;
+        margin: 4.8rem 5rem 0 4.5rem;
+    }
+}
+
 
 /* lower main section style */
 .main-bottom {
