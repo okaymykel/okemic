@@ -7,10 +7,9 @@ const effect = document.querySelector('.effect');
 const container = document.querySelector('.container');
 
 // change background on scroll
-document.onwheel = changeBackground
-function changeBackground(event) {
-   
-    if (event.deltaY > 0) {
+window.onscroll = changeBackground
+function changeBackground(  ) {
+    if (window.pageYOffset > 0) {
         const currentColor = effect.style.backgroundColor;        
         nav.style.background = currentColor  ? currentColor : '#000';  
         moon.style.color = nav.style.background == 'rgb(255, 255, 255)' ? '#000' : '#fff';
@@ -43,22 +42,24 @@ function handleClickEvent() {
         
         changeTitleSyle('#fff');
         
-        if (!nav.style.background) { return }
-        nav.style.background = nav.style.background  ? '#000' : nav.style.background;
-        moon.style.color = '#fff';
+        if (window.pageYOffset > 0) {
+            nav.style.background = nav.style.background  ? '#000' : nav.style.background;
+            moon.style.color = '#fff';
+            nav.style.color = '#fff';
+        }
         
-        nav.style.color = '#fff';
     } else {
+    
         effect.style.backgroundColor = '#fff';
         watch_tv.style.backgroundImage =  "linear-gradient(to right top, rgba(255,30,72, .65), #ED867D), url('images/ae2f001213e74f45eac9ef1e142f321391587ac2-shutterstock_274681841.jpg')";
         
         changeTitleSyle('#000');
         
-        if (!nav.style.background) { return }
-        nav.style.background = nav.style.background  ? '#fff' : nav.style.background;
-        moon.style.color = '#000'
-        nav.style.color = '#000';
-            
+        if (window.pageYOffset > 0) {
+            nav.style.background = nav.style.background  ? '#fff' : nav.style.background;
+            moon.style.color = '#000'
+            nav.style.color = '#000';
+        }
     }
 
 }
