@@ -2,7 +2,6 @@
 
 if (is_post_request()) {
 
-    // print_r($_POST);
     $result = create_post($_POST['data']);
     
     if($result === true) {
@@ -40,7 +39,7 @@ $category_set = find_all_categories();
             <select name="data[cat_id]" id="">
                 <option value=""></option>
                 <?php while($categories = mysqli_fetch_assoc($category_set)): ?>
-                    <option value="<?= $categories['id'] ?>"><?= $categories['name'] ?></option>
+                    <option value="<?= $categories['id'] ?>"><?= ucfirst($categories['name']) ?></option>
                 <?php endwhile ?>
                 <?php mysqli_free_result($category_set); ?>
             </select>
@@ -51,7 +50,6 @@ $category_set = find_all_categories();
         </div>
         <div>
             <button type="submit" class="submit_btn">Submit</button>
-            <!-- <input type="submit" value="Submit" class="card_btn"> -->
         </div>
     </form>
     

@@ -1,5 +1,9 @@
 <?php require_once('../../private/intialize.php');
 
+if(!isset($_GET['id'])) {
+    redirect_to(url_for('/index.php'));
+}
+
 $id = $_GET['id'] ?? '1';
 $blog = find_post_by_id($id);
 ?>

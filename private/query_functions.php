@@ -74,4 +74,41 @@ function find_category_by_id($id) {
     return $result;
 }
 
+function update_post($data) {
+    global $db;
+    
+    $query = "UPDATE post_table SET ";
+    $query .= "topic='" . db_escape($db, $data['topic']) . "', ";
+    $query .= "cat_id='" . db_escape($db, $data['cat_id']) . "', ";
+    $query .= "body='" . db_escape($db, $data['body']) . "' ";
+    $query .= "WHERE id='" . db_escape($db, $data['id']) . "' ";
+    $query .= "LIMIT 1";
+    echo $query;
+    $result = mysqli_query($db, $query);
+    if (!$result) {
+        echo mysqli_error($db);
+        close_db_connection($db);
+        exit;
+    } 
+    
+    return true;
+}
+
+function delete_post($id) {
+    global $db;
+    
+    $query = "DELETE FROM post_table ";
+    $query .= "WHERE id='" . db_escape($db, $id) . "' ";
+    $query .= "LIMIT 1";
+    $result = mysqli_query($db, $query);
+    
+    if (!$result) {
+        echo mysqli_error($db);
+        close_db_connection($db);
+        exit;
+    }
+    
+    return true;
+}
+
 ?>
