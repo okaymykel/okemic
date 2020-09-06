@@ -1,7 +1,8 @@
-<hr>
+<hr style="border: 1px solid #ccc;">
 <footer>
     &copy; <?= date('Y'); ?> Blog Post
 </footer>
+</div>
 </body>
 </html>
 

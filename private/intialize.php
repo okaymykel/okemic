@@ -3,7 +3,7 @@
 
 ob_start(); 
 
-// session_start();  // start session storage
+session_start();  // start session storage
 
 
 // DEFINE ROOT PATH
@@ -20,6 +20,7 @@ define("WWW_ROOT", $doc_root);
 require_once('functions.php');
 require_once('database.php');
 require_once('query_functions.php');
+require_once('auth.functions.php');
 
 $db = db_connection();
 $errors = [];

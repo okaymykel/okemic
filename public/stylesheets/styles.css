@@ -19,9 +19,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   outline: none;
   
-  /* padding: 0;
-  background-color: #fff; */
-  
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 a, a:link {
@@ -52,11 +54,12 @@ label {
 
 
 
+
 .container {
     width: 1000px;
-    background-color: #5472D2;
-    margin: 10rem auto;
+    background-color: #fff;
     padding: 2rem;
+    border-radius: 5px;
 }
 
 .no-content {
@@ -69,7 +72,7 @@ ul { text-decoration: none; }
 footer { 
     text-align: center;
     font-size: 2rem;
-    padding-top: 2rem;
+    padding-top: 1.2rem;
 }
 
 .card_head {
@@ -77,13 +80,25 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
-.card_head a {
+.card_head_right {
+  flex-grow: 1; 
+  
+  display: flex; 
+  justify-content: flex-end; 
+  align-items: center;
+}
+
+
+.card_head a, .card_head button {
     font-size: 1.5rem;
     border-radius: 5px;
     padding: 1rem;
-    color: #5472D2;
-    background-color: #fff;
+    color: #fff;
+    background-color: #5472D2;
     box-shadow: 0 6px 6px -6px #aaa;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 .card_container {
@@ -91,14 +106,15 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.2rem;
     margin: 2rem 0;
-}
-
-.card {
+  }
+  
+  .card {
     padding: 1.5rem;
+    border: 2px solid #ccc;
     padding-bottom: 2.3rem;
     border-radius: 5px;
     background-color: #fff;
-    box-shadow: 0 6px 6px -6px #aaa;
+    box-shadow: 1px 1px 3px #ddd;
     cursor: pointer;
 }
 
@@ -126,8 +142,8 @@ footer {
     border: none;
 }
 .submit_btn {
-    color: #5472D2;
-    background-color: #fff;
+    color: #fff;
+    background-color: #5472D2;
     padding: 1rem 2rem;
     margin: 2rem 0;
 }
@@ -135,7 +151,6 @@ footer {
 select, input {
     padding: .7rem;
     border-radius: 5px;
-    border: none;
     margin: 1rem;
 }
 
@@ -144,8 +159,9 @@ select, input {
     display: inline-block;
     border: 2px solid red;
     color: red;
-    padding: 1em;
-    margin-bottom: 1em;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
   }
   
   
@@ -153,3 +169,5 @@ select, input {
     margin-bottom: 0;
     padding-left: 1em;
   }
+  
+  .mt { margin-top: 1.3rem; }

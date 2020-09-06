@@ -1,5 +1,7 @@
 <?php require_once('../../private/intialize.php');
 
+page_require_login();
+
 if (is_post_request()) {
 
     $result = create_post($_POST['data']);
@@ -25,11 +27,12 @@ $category_set = find_all_categories();
 <?php  include(SHARED_PATH . '/header.php'); ?>
 
 <div class="container">
-    <a href="<?php echo url_for('/index.php') ?>">&laquo; Back to List</a>
+    <a href="<?php echo url_for('/index.php') ?>" class="submit_btn">&laquo; Back to List</a>
 
-    <h1>Create a new blog post</h1>
-    <?php echo display_errors($errors); ?>
-    <form action=" <?php echo url_for('/pages/new.php'); ?> " method="post">
+    <div class="mt">
+        <h1>Create a new blog post</h1>
+        <?php echo display_errors($errors); ?>
+        <form action=" <?php echo url_for('/pages/new.php'); ?> " method="post">
         <div>
             <label for="data[topic]">Topic</label>
             <input type="text" name="data[topic]" id="">
@@ -40,18 +43,19 @@ $category_set = find_all_categories();
                 <option value=""></option>
                 <?php while($categories = mysqli_fetch_assoc($category_set)): ?>
                     <option value="<?= $categories['id'] ?>"><?= ucfirst($categories['name']) ?></option>
-                <?php endwhile ?>
-                <?php mysqli_free_result($category_set); ?>
-            </select>
-        </div>
-        <div>
-            <label for="data[body]">Content</label>
-            <textarea name="data[body]" id="" cols="30" rows="5"></textarea>
-        </div>
-        <div>
-            <button type="submit" class="submit_btn">Submit</button>
-        </div>
-    </form>
+                    <?php endwhile ?>
+                    <?php mysqli_free_result($category_set); ?>
+                </select>
+            </div>
+            <div>
+                <label for="data[body]">Content</label>
+                <textarea name="data[body]" id="" cols="30" rows="5"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="submit_btn">Submit</button>
+            </div>
+        </form>
+    </div>
     
     <?php  include(SHARED_PATH . '/footer.php'); ?>
 </div>

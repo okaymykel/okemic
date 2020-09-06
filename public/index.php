@@ -1,7 +1,12 @@
 <?php require_once('../private/intialize.php'); 
-
-$blogs_set = find_all_posts();
-
+    
+    
+    if (is_post_request()) {
+        logout();
+    }
+    page_require_login();
+    $blogs_set = find_all_posts();
+    
 ?>
 <?php $page_title = 'Home'; ?>
 <?php include(SHARED_PATH . '/header.php') ?>
@@ -9,7 +14,13 @@ $blogs_set = find_all_posts();
 <div class="container">
     <div class="card_head">
         <h1>All posts</h1>
-        <span><a href="<?= url_for('/pages/new.php') ?>">Create Post</a></span>
+        <div class="card_head_right">
+            <span style="margin-right: 1.5rem;"><a href="<?= url_for('/pages/new.php') ?>">Create Post</a></span>
+            <span style="margin-right: 1.3rem;"><h3>User - <?php echo $_SESSION['email'] ?></h3></span>
+            <form action="<?php echo url_for('/index.php') ?>" method="post">
+                <button type="submit">Logout</button>
+            </form>
+        </div>
     </div>
     
     <!-- display data when blog array is NOT next empty -->

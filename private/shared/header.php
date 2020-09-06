@@ -7,4 +7,6 @@
     <link rel="stylesheet" href=" <?= url_for('/stylesheets/styles.css'); ?> ">
 </head>
 <body>
+<div class="page">
+
  

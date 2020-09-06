@@ -111,4 +111,19 @@ function delete_post($id) {
     return true;
 }
 
+function find_user_by_email($email) {
+    global $db;
+    
+    $query = "SELECT * FROM auth_table ";
+    $query .= "WHERE email='" . db_escape($db, $email) . "' ";
+    $query .= "LIMIT 1";
+    $result = mysqli_query($db, $query);
+    confirm_result_set($result);
+    
+    $data = mysqli_fetch_assoc($result);
+    mysqli_free_result($result);
+    
+    return $data;
+}
+
 ?>
