@@ -20,10 +20,11 @@ body {
   outline: none;
   
   background: linear-gradient(to right, #0072ff, #00c6ff);
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100vh; */
+  
 }
 
 a, a:link {
@@ -53,7 +54,12 @@ label {
 }
 
 
-
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
 .container {
     width: 1000px;
@@ -170,4 +176,4 @@ select, input {
     padding-left: 1em;
   }
   
-  .mt { margin-top: 1.3rem; }
+  .mt { margin-top: 3rem; }

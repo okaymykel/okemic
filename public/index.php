@@ -27,10 +27,12 @@
     <?php if ($blogs_set->num_rows > 0) { ?>
         <div class="card_container">
             <?php while($blogs = mysqli_fetch_assoc($blogs_set)): ?>
+            <!-- <?php print_r($blogs) ?> -->
                 <div class="card">
-                    <h3>Title -  <?= $blogs['topic']; ?> </h3>
-                    <h5>Category - <?= ucfirst($blogs['name']); ?> </h5>
-                    <p><?= truncate_string($blogs['body']); ?></p>
+                    <h3>Topic -  <?= $blogs['topic']; ?> </h3>
+                    <!-- <h5>Category - <?= ucfirst($blogs['name']); ?> </h5> -->
+                    <!-- <p><?= truncate_string($blogs['body']); ?></p> -->
+                    <p>Date Created - <?php echo $blogs['date_created']; ?></p>
                     <div>
                         <span><a href="<?= url_for('/pages/view.php?id=') . h(u($blogs['id'])); ?>" class="card_btn">View</a></span>
                         <span><a href="<?= url_for('/pages/edit.php?id=') . h(u($blogs['id'])); ?>" class="card_btn">Edit</a></span>

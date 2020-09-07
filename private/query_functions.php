@@ -26,9 +26,10 @@ function create_post($post) {
 function find_all_posts() {
     global $db;
     
-    $query = "SELECT a.id, a.cat_id, a.topic, a.body, b.name ";
+    $query = "SELECT a.id, a.cat_id, a.topic, a.date_created, a.body, b.name ";
     $query .= "FROM post_table a LEFT JOIN category_table b ";
     $query .= "ON a.cat_id = b.id";
+    $query .= " ORDER BY a.date_created ASC";
     $result = mysqli_query($db, $query);
 
     confirm_result_set($result);
@@ -38,11 +39,13 @@ function find_all_posts() {
 function find_post_by_id($id) {
     global $db;
     
-    $query = "SELECT a.id, a.cat_id, a.topic, a.body, b.name ";
+    $query = "SELECT a.id, a.cat_id, a.date_created, a.topic, a.body, b.name ";
     $query .= "FROM post_table a LEFT JOIN category_table b ";
     $query .= "ON a.cat_id = b.id ";
     $query .= "WHERE a.id=" . db_escape($db, $id);
+    // $query .= " ORDER BY a.date_created ASC";
     $query .= " LIMIT 1";
+    // echo $query;
     
     $result = mysqli_query($db, $query);
     confirm_result_set($result);

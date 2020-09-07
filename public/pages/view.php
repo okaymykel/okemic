@@ -18,9 +18,10 @@ $blog = find_post_by_id($id);
     <a href="<?php echo url_for('/index.php') ?>" class="submit_btn">&laquo; Back to List</a>
     <div style="margin: 1.3rem 0;">
         
-        <h1>Topic - <span style="font-weight: normal;"><?php echo ucfirst($blog['topic']) ?></span></h1>
-        <h1>Category - <span style="font-weight: normal;"><?php echo ucfirst($blog['name']) ?></span> </h1>
-        <h1>Content - <span style="font-weight: normal;"><?php echo ucfirst($blog['body']) ?></span></h1>
+        <h2 class="mt">Topic - <span style="font-weight: normal;"><?php echo ucfirst($blog['topic']) ?></span></h2>
+        <h2>Category - <span style="font-weight: normal;"><?php echo ucfirst($blog['name']) ?></span> </h2>
+        <h2>Body - <span style="font-weight: normal;"><?php echo ucfirst($blog['body']) ?></span></h2>
+        <p style="font-weight: normal; margin-top: 2rem;">Date Created - <span><?php echo $blog['date_created'] ?></span></p>
     </div>
     <?php  include(SHARED_PATH . '/footer.php'); ?>
 </div>
