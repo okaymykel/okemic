@@ -16,7 +16,7 @@ if($dbcon){
     
 }else{
 
-    echo "failed";
+    echo "Database connection failed!";
 
 }
 
