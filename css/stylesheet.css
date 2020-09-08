@@ -627,7 +627,8 @@ border-radius: 4px;
    position: relative;
    margin-top: 48%;
    padding:180px;
-   height: 200px;
+   /* height: 200px; */
+   width: auto;
 }
 .details_head{
     display: flex;
@@ -688,16 +689,24 @@ details_text i{
     color:#25c6f7fb;
 }
 
-.footer{
-    background-color: black;
-}
+
+
 
 .footer p{
-    padding: 30px 10px;
+    padding: 10px 8px ;
     font-size:12px;
     text-align: center;
+    background-color: rgb(12, 3, 53);
+    color:white;
+    width: 96%;
+    position: absolute;
+    margin-top:-4%;
+    margin-left: 1.4%;
 }
 .details_head h1 span{
     color:#f7a325fb;
 
+}
+.footer-text p span{
+ color:   #f7a325fb
 }
