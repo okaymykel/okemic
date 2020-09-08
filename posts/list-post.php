@@ -31,7 +31,7 @@
 <nav class="nav-bar">
     <div class="nav-list">
         <ul>
-            <li><a href="">Blog</a></li>
+            <li><a href="list-post.php">Blog</a></li>
             <li><a href= "add-post.php">Create Post</a></li>
             <li><a href="../handlers/logout-handler.php">Log out of blog</a></li>
         </ul>
@@ -40,7 +40,7 @@
     
     <div class="container">
     <div class="message">
-        <span> <?php echo $_SESSION['message'] ?></span>
+        <span><h3> <?php echo $_SESSION['message'] ?></h3></span>
     </div>
    
     <?php while($row = mysqli_fetch_assoc($result)) {?>
@@ -51,10 +51,10 @@
             <p><?php echo $row['body'] ?></p>
         </div>
             <span>Post created on: <?php echo $row['date_created'] ?></span>
-        <div>
-            <a href="view-post.php?post_id=<?php echo $row['id']?>">View Post</a>
-            <a href="edit-post.php?post_id=<?php echo $row['id']?>">Edit</a>
-            <a href="delete-post.php?post_id=<?php echo $row['id']?>">Delete</a>
+        <div class="action">
+            <a href="view-post.php?post_id=<?php echo $row['id']?>" class="view">View Post</a>
+            <a href="edit-post.php?post_id=<?php echo $row['id']?>" class="edit">Edit</a>
+            <a href="delete-post.php?post_id=<?php echo $row['id']?>" class="delete">Delete</a>
            </div>
        <?php } ?>
 

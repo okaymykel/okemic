@@ -21,13 +21,13 @@
    <nav class="nav-bar">
       <div class="nav-list">
          <ul>
-               <li><a href="">Blog</a></li>
+               <li><a href="list-post.php">Blog</a></li>
                <li><a href= "add-post.php">Create Post</a></li>
                <li><a href="../handlers/logout-handler.php">Log out of blog</a></li>
          </ul>
       </div>
    </nav>
-   
+
     <div class="container">
       <div class="header">
          <h4><?php echo $post_topic   ?></h4>

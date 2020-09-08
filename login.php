@@ -16,7 +16,7 @@
 <nav class="nav-bar">
     <div class="nav-list">
         <ul>
-            <li><a href="">Blog</a></li>
+            <li><a href="login.php">Login</a></li>
            
         </ul>
     </div>
@@ -24,13 +24,13 @@
     <div class="container">
     <form action="login.php" method="post">
         <div class="header">
-            <label for="email">Email</label>
-            <input type="email" name = "email" placeholder = "Your email address" required>
+            <label for="email">Enter Your Email</label><br>
+            <input type="email" name = "email" placeholder = "Enter Your email address here" required>
         </div>
 
-        <div class="password">
-            <label for="password">Password</label>
-            <input type="password" name = "password" placeholder="Your password" required>
+        <div class="body">
+            <label for="password">Enter your Password</label><br>
+            <input type="password" name = "password" placeholder="Enter Your password here" required>
         </div>
     
         <div class="btn">

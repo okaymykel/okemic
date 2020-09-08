@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Create Post</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
 <nav class="nav-bar">
     <div class="nav-list">
         <ul>
-            <li><a href="">Blog</a></li>
+            <li><a href="list-post.php">Blog</a></li>
             <li><a href= "add-post.php">Create Post</a></li>
             <li><a href="../handlers/logout-handler.php">Log out of blog</a></li>
         </ul>
@@ -28,13 +28,13 @@
 <div class="container">
     <form action="add-post.php" method="post">
         <div class="header">
-            <label for="topic">Email</label>
-            <input type="text" name = "topic" placeholder = "Your blog topic" required>
+            <label for="topic">Post Title</label><br>
+            <input type="text" name = "topic" placeholder = "Enter Your post topic here" required>
         </div>
 
         <div class="body">
-            <label for="body">Post body</label>
-           <textarea name="body"  cols="30" rows="10" placeholder="Write your blog post here" required></textarea>
+            <label for="body">Post body</label><br>
+           <textarea name="body"  cols="30" rows="10" placeholder="Write your post here" required></textarea>
         </div>
         <div class="select">
             <div>

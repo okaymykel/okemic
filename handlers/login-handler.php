@@ -20,7 +20,7 @@ $result = mysqli_query($dbcon, $sql);
 
 if(mysqli_num_rows($result)>0){
 
-    $_SESSION['message'] = "You're Welcome";
+    $_SESSION['message'] = "You're Welcome to this blog!";
      $_SESSION['email'] = $email;
     header('Location: ./posts/list-post.php');
 }else{

@@ -26,15 +26,112 @@ nav{
     text-decoration: none;
 }
 
+.nav-list ul li a:hover{
+    color:white;
+    transition: .7s;
+}
+
 
 .container{
-
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 100%;
     padding: 50px;
     text-align: justify;
+    border: 1px solid rgb(145, 145, 187);
 
+}
+
+.container .body{
+    text-align: left;
+}
+
+button{
+    background-color: rgb(145, 145, 187);
+    margin-top: 10px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(252, 246, 246);
+    font-weight: bold;
+}
+
+select{
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+
+margin-bottom: 10px;
+}
+
+.action{
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.action .view{
+    text-decoration: none;
+    background-color: rgb(145, 145, 187);
+    padding: 6px;
+    border-radius: 5px;
+    color: rgba(248, 242, 242, 0.986);
+    font-weight: bold;
+}
+
+.action .view:hover{
+    color: #f5f5f58c;
+    transition: .7s;
+}
+
+.action .edit{
+    text-decoration: none;
+    background-color: rgb(83, 167, 135);
+    padding: 6px;
+    border-radius: 5px;
+    width: 30px;
+    color: rgba(248, 242, 242, 0.986);
+    font-weight: bold;
+}
+
+.action .edit:hover{
+    color:rgb(93, 134, 118);
+    transition: .7s;
+}
+
+.action .delete{
+    text-decoration: none;
+    background-color: rgb(158, 54, 54);
+    padding: 6px;
+    border-radius: 5px;
+    width: 30px;
+    color: rgba(248, 242, 242, 0.986);
+    font-weight: bold;
+}
+
+.action .delete:hover{
+    color: #ee53538c;
+    transition: .7s;
+}
+
+.message{
+    color:  rgba(248, 242, 242, 0.986);
+    background-color: rgb(145, 145, 187);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.header input, .body input{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.body textarea{
+    padding: 5px;
+    border-radius: 5px;
 }
