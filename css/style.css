@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: #bdb8b8;
+    padding: 20px;
+    display: flex;
+
+}
+
+.nav-list ul{
+    display: flex;
+    margin: 0 auto;
+}
+
+.nav-list ul li{
+    list-style-type: none;
+    margin: 0.5em;
+    font-size: 20px;
+}
+
+.nav-list ul li a{
+    text-decoration: none;
+}
+
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding: 50px;
+    text-align: justify;
+
+}

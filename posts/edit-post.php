@@ -5,24 +5,8 @@
 
 <?php 
 
-//SQL Queries to select post from database based on chosen post id
-
-    if(isset($_GET['post_id'])){
-
-    $post_id = $_GET['post_id'];
-    
-      $sql = "SELECT * FROM post WHERE id=$post_id";
-
-      $result = mysqli_query($dbcon, $sql);
-
-      while($row = mysqli_fetch_assoc($result)){
-          $post_topic = $row['topic'];
-          $post_body = $row['body'];
-          $post_cat = $row['cat_id'];
-      }
-      
-    }
-
+//Include the functionality for edit page
+    include('../handlers/edit-post-handler.php');
 ?>
 
 
@@ -34,8 +18,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Page</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+
+<nav class="nav-bar">
+    <div class="nav-list">
+        <ul>
+            <li><a href="">Blog</a></li>
+            <li><a href= "add-post.php">Create Post</a></li>
+            <li><a href="../handlers/logout-handler.php">Log out of blog</a></li>
+        </ul>
+    </div>
+</nav>
+
 <div class="container">
     <form action="../handlers/update-post-handler.php" method="post">
         <div class="header">

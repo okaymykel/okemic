@@ -11,8 +11,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+
+<nav class="nav-bar">
+    <div class="nav-list">
+        <ul>
+            <li><a href="">Blog</a></li>
+            <li><a href= "add-post.php">Create Post</a></li>
+            <li><a href="../handlers/logout-handler.php">Log out of blog</a></li>
+        </ul>
+    </div>
+</nav>
+
 <div class="container">
     <form action="add-post.php" method="post">
         <div class="header">
