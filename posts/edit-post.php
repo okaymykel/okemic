@@ -56,7 +56,7 @@
             ?>
         </select>
         </div>
-             <input type="text" name="post_id" value="<?php echo $post_id?>">    
+             <input type="hidden" name="post_id" value="<?php echo $post_id?>">    
         <div class="btn">
             <button name="update_post">Submit</button>
         </div>
