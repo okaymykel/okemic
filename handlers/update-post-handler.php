@@ -17,6 +17,8 @@
 
         $category = mysqli_real_escape_string($dbcon, trim($_POST['category']));
 
+        $post_id = $_POST['post_id'];
+
         $dt = new DateTime("now", new DateTimeZone('Africa/Lagos'));
 
         $date_created = $dt->format('m/d/Y, H:i:s.');
@@ -25,9 +27,9 @@
     
     };
 
-    $sql = "UPDATE post SET cat_id = '$category', topic='$post_topic', body = '$post_body', date_created = '$date_updated', date_updated='$date_updated' ";
+    $sql = "UPDATE post SET cat_id = '$category', topic='$post_topic', body = '$post_body', date_created = '$date_updated', date_updated='$date_updated' WHERE id=$post_id";
 
     $result = mysqli_query($dbcon, $sql);
 
     header('location:../posts/list-post.php');
-?>sss
+?>
