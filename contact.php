@@ -7,7 +7,7 @@ if (isset($_POST['send'])) {
     $to = 'Taofeek Olayiwola <taofeeq.issa076@gmail.com>';
     $subject ='Feedback from online form';
     $headers = [];
-    $headers[] = 'From: webmaster@example.com';
+    $headers[] = 'From: taofeeq.issa076@gmail.com';
     $headers[] = 'Cc: another@example.com';
     $headers[] = 'Content-type: text/plain; charset=utf-8';
     $authorized = '-ftaofeeq.issa076@gmail.com';
