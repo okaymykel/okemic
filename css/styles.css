@@ -1,0 +1,148 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    width: 100%;     
+}
+
+.wrapper-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 0;
+    box-shadow: 0px 4px 4px -5px;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bold;
+}
+.nav-logo{
+    font-size: 15px;
+    margin-left: 5%;
+}
+.nav-logo span{
+    color: yellow;
+}
+.nav{
+  justify-content: space-between;
+  display: flex;
+  width: 30%;  
+}
+
+
+.icon{
+    justify-content: space-between;
+    width: 10%;
+    display: flex;
+    font-size: 15px;
+    margin-right: 10%;
+}
+.home{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 5%;
+    
+    
+}
+.image{
+    display: flex;
+    padding-left: 5%;
+    padding-top: 3%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.image h1{
+    margin-left: 5%;
+}
+.image-word blockquote{
+    font-size: 14px;
+}
+.image-word h2{
+    margin-left: 5%;
+}
+.image-icons{
+    margin-left: 5%;
+}
+.image-icons span{
+    
+    background: whitesmoke;
+    border-radius: 20px;
+    padding: 10px;
+    font-size:10px;
+    margin: 5px;
+    
+}
+.item{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    background-color: whitesmoke;
+    width: 90%;
+    height: 120px;
+    margin-left: 5%;
+}
+.item-content{
+    margin-left: 10px;
+}
+.item-form{
+    margin-left: 50%;
+    padding-top: 3%;
+}
+.item-form input{
+    height: 23px;
+    width: 250px; 
+    border: white; 
+    
+}
+.item-form button{
+  background: yellow;
+  border: white;
+  height: 30px;
+  width: 90px;
+  font-size: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  padding-top: 4px
+  
+}
+.images{
+    margin-left: 6%;
+    padding-top: 3%;
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 5%;
+}
+
+.footer-tags button{
+    justify-content: space-between;
+    margin: 6px;
+    border: white;
+    padding: 10px 10px;
+}
+/* .footer-follow{
+    display: inline;
+} */
+.footer-follow span{
+    margin: 5px;
+    background: whitesmoke;
+    border-radius: 20px;
+    padding:10px;
+    font-size:10px;
+}
+.footer-posts{
+    float: left;
+}
+.footer-posts-comment i{
+    color: orange;
+}
+.footer-posts-comment p{
+    font-size: 12px; 
+    
+    
+}
+.red{ color: red;}
+.blue{ color: blue;}
+
