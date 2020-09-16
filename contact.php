@@ -7,10 +7,10 @@ if (isset($_POST['send'])) {
     $to = 'Taofeek Olayiwola <taofeeq.issa076@gmail.com>';
     $subject ='Feedback from online form';
     $headers = [];
-    $headers[] = 'From: taofeeq.issa076@gmail.com';
+    $headers[] = 'From: taofeeq.olayiwola@yahoo.com';
     $headers[] = 'Cc: another@example.com';
     $headers[] = 'Content-type: text/plain; charset=utf-8';
-    $authorized = '-ftaofeeq.issa076@gmail.com';
+    $authorized = 'null';
     require './includes/process_mail.php';
     if ($mailSent) {
       header('Location: thanks.php');
