@@ -1,0 +1,173 @@
+body{
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    font-family: 'Ralway', sans-serif
+}
+.nav-bar{
+    justify-content: center;
+    box-shadow: 0px 4px 4px -5px;
+    font-weight: bold;
+    overflow: hidden;
+    
+    
+
+}
+
+.setup{
+    float: left;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: -24px;
+    
+    
+}
+.icon-container span{
+    background: whitesmoke;
+    border-radius: 20px;
+    margin: 10px;
+    font-size: small;
+    padding: 10px;
+}
+.red{color: red;
+}
+.blue{
+    color: blue;
+}
+
+.setup span{
+    color:yellow;
+}
+.landingpage{
+    position: relative;
+    width:100%;
+    margin-top:4%;
+    padding: 17px;
+    margin-left: 10%;
+
+}
+
+.landingpage h3{
+    font-family: 'Ralway', sans-serif;
+    justify-content: center;
+    font-size: 27px; 
+    padding: 10px;
+
+}
+
+
+.icon-container{
+    font-size: 20px;
+    background-color: white;
+    padding: 10px;
+    margin-right: 8px;
+    border-radius: 50%;
+    justify-content: space-between;
+    color:blue;
+}
+
+.logo{
+    float: right;
+    margin-right: 5%;
+    padding-top: 10px;
+}
+.logo span{
+    margin: 5px;
+    
+}
+
+.landingpage p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    text-align: justify;  
+}
+.nav-bar {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    
+}
+   
+.nav-bar a{
+    display: -webkit-inline-box;
+    font-size: 15px;
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+.nav-bar a:hover {
+    background-color:white;
+    text-decoration: none;
+    
+}
+img{
+    float: left;
+    margin-left: 10px;
+}
+h2{
+    text-align: center;
+}
+input{
+    margin: 0;
+    padding: 2px;
+    border: none;
+    margin-right: 5%;
+    float: right;
+}
+button{
+margin-right: 5%;
+float: right;
+}
+form{
+    width: 90%;
+    height: 130px;
+    padding: 0px;
+    display: inline-block;
+    background-color: whitesmoke;
+    background-position: inherit;
+    position: relative;
+    margin-left: 5%;
+    background-repeat: no-repeat;
+    line-height: 3px;    
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 5%;    
+}
+
+.footer p{
+font-size: small;
+}
+.about{
+    float: left;
+}
+.image{
+   width: 100%;
+   margin-left: 9%;
+}
+.posts{
+    float: left;
+    margin-left: 40px;
+    text-decoration: none;
+    margin: 0px;
+   
+}
+.tags{
+    text-align: center;
+    text-decoration: none;
+}
+
+.tags button{
+    padding:  5px;
+    margin: 10px;
+}
+.follow span{
+    background: whitesmoke;
+    border-radius: 20px;
+    margin: 10px;
+    font-size: small;
+    padding: 10px; 
+}
