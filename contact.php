@@ -4,13 +4,13 @@ $missing = [];
 if (isset($_POST['send'])) {
     $expected = ['name', 'email', 'comments'];
     $required = ['name', 'comments'];
-    $to = 'Taofeek Olayiwola <taofeeq.issa076@gmail.com>';
+    $to = 'Taofeek Olayiwola <taofeeq.olayiwola@yahoo.com>';
     $subject ='Feedback from online form';
     $headers = [];
-    $headers[] = 'From: taofeeq.olayiwola@yahoo.com';
-    $headers[] = 'Cc: another@example.com';
+    $headers[] = 'From: taofeeq.issa076@gmail.com';
+    // $headers[] = 'Cc: softdev@envivocom.net, taofeeq.olayiwola@yahoo.com';
     $headers[] = 'Content-type: text/plain; charset=utf-8';
-    $authorized = 'null';
+    $authorized = '-ftaofeeq.issa076@gmail.com';
     require './includes/process_mail.php';
     if ($mailSent) {
       header('Location: thanks.php');
