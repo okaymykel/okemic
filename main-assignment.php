@@ -1,1 +1,1 @@
-<?php header("css projects: /main assignment.html"); ?>
+<?php header("Location: /main assignment.html");?>
