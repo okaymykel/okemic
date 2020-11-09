@@ -3,6 +3,6 @@
 <?php
 require_login();
 
-redirect_to(url_for('/blog/posts/index.php'));
+redirect_to(url_for('/index.php'));
 
 ?>

@@ -35,7 +35,7 @@ if(is_post_request()) {
 
 <div id="content">
 
-  <a id="back" class="back-link" href="<?php echo url_for('/blog/posts/index.php'); ?>">&laquo; Back to Post List</a>
+  <a id="back" class="back-link" href="<?php echo url_for('/index.php'); ?>">&laquo; Back to Post List</a>
 
   <div class="post new">
     <h1>Create post</h1>

@@ -5,7 +5,7 @@ require_once('../../../private/initialize.php');
 require_login();
 
 if(!isset($_GET['id'])) {
-    redirect_to(url_for('/blog/posts/index.php'));
+    redirect_to(url_for('/index.php'));
 }
 
 $id = $_GET['id'];
@@ -38,7 +38,7 @@ if(is_post_request()) {
 
 <div id="content">
 
-  <a id="back" class="back-link" href="<?php echo url_for('/blog/posts/index.php'); ?>">&laquo; Back to Post List</a>
+  <a id="back" class="back-link" href="<?php echo url_for('/index.php'); ?>">&laquo; Back to Post List</a>
 
   <div class="post edit">
     <h1>Edit Post</h1>

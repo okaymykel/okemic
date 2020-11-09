@@ -5,7 +5,7 @@ require_once('../../../private/initialize.php');
 require_login();
 
 if(!isset($_GET['id'])) {
-  redirect_to(url_for('/blog/posts/index.php'));
+  redirect_to(url_for('/index.php'));
 }
 $id = $_GET['id'];
 
@@ -13,7 +13,7 @@ if(is_post_request()) {
 
   $result = delete_post($id);
   $_SESSION['message'] = 'The page was deleted successfully.';
-  redirect_to(url_for('/blog/posts/index.php'));
+  redirect_to(url_for('/index.php'));
 
 } else {
     $post = find_post_by_id($id);

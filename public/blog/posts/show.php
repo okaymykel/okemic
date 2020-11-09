@@ -4,7 +4,7 @@
 require_login();
 
 if(!isset($_GET['id'])) {
-  redirect_to(url_for('/blog/posts/index.php'));
+  redirect_to(url_for('/index.php'));
 }
 $id = $_GET['id'];
 
@@ -18,7 +18,7 @@ $category = find_category_by_id($post['cat_id']);
 
 <div id="content">
 
-  <a id="back" class="back-link" href="<?php echo url_for('/blog/posts/index.php'); ?>">&laquo; Back to Post List</a>
+  <a id="back" class="back-link" href="<?php echo url_for('/index.php'); ?>">&laquo; Back to Post List</a>
 
   <?php echo display_session_message(); ?>
 
