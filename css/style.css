@@ -1,0 +1,210 @@
+.Contact-header{
+    background: url(../images/header-background.png);
+    margin: 0;
+    background-size: cover;
+}
+.header-content{
+    justify-content: space-between;
+    display: flex;
+    width: 1000px;
+    padding-top: 35px;
+    margin-left: 170px;
+}
+.header-content img{
+    padding-right: 120px;
+}
+.header-nav{
+    justify-content: space-between;
+    display: flex;
+    width: 600px;
+    align-items: center;
+}
+.header-nav span{
+    font-weight: 600;
+    font-size: large;
+}
+.header-nav span a{
+    text-decoration: none;
+    color: #000000;
+}
+.contact{
+    padding-top: 60px;
+    justify-content: space-between;
+    display: flex;
+    width: 1170px;
+    margin-left: 170px;
+
+}
+.contact-word{
+    margin-top: 150px;
+}
+.contact-word h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+.contact-word p{
+    color: #808080;
+    margin-top: 20px;
+}
+.contact-details{
+    justify-content: space-between;
+    display: flex;
+    width: 1000px;
+    margin-top: 70px;
+    margin-left: 170px;
+}
+.contacts h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.contacts p{
+    font-weight: 400;
+    font-size: 16px;
+}
+.contacts button{
+    border-radius: 40px;
+    padding: 12px;
+    color: #ffffff;
+    background: #1f1e1e;
+    border: none;
+    font-weight: 600;
+    font-size: medium;
+    margin-top: 50px;
+    width: 150px;
+}
+.Form{
+    display: flex;
+}
+.Email{
+    width: 250px;
+    margin-left: 60px;
+}
+.Address{
+    background-image: url(../images/contact-background.jpg);
+    padding: 20px;
+    text-align: center;
+}
+.Address h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.Address a{
+    text-decoration: none;
+    color: #808080;
+}
+.Address p{
+    color: #808080;
+}
+.office{
+    margin-top: 50px
+}
+.Phone{
+    margin-top: 50px;
+}
+.Web{
+    margin-top: 50px;
+}
+.newsletter{
+    text-align: center;
+    margin-top: 120px;
+}
+.newsletter h1{
+    color: #808080;
+    font-size: 17px;
+    font-weight: 600;
+}
+.newsletter h2{
+    font-weight: 600;
+    font-size: 40px;
+}
+.newsletter h2 span{
+    color:#59e3a7 ;
+}
+.newsletter-form{
+    display: flex;
+    width: 600px;
+    margin-left: 400px;
+    margin-top: 30px;
+    
+    
+}
+.newsletter-form input{
+    width: 600px;
+    height:60px;
+    border-radius: 40px;
+    border: 1px solid #c0c0c0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+.newsletter-form button{
+    border-radius: 30px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    padding: 14px;
+    color: #ffffff;
+    background: #131212;
+    border: none;
+    font-weight: 600;
+    font-size: 17px;
+    width: 150px;
+    margin-top: 15px;
+    height: 60px;
+    
+}
+.Footer{
+    background-image: url(../images/footer-image.png);
+    background-size:contain;
+    margin: 0;
+}
+.Buznex{
+    justify-content: space-between;
+    display: flex;
+    width: 1000px;
+    margin-top: 100px;
+    margin-left: 170px;
+}
+.buznex-image{
+    padding-top: 80px;
+}
+
+.buznex-image p{
+    margin-top: 20px;
+    color: #808080;
+}
+
+.Buznex .icons{
+    margin-top: 20px;
+    justify-content: space-between;
+    display: flex;
+    width: 120px; 
+}
+.black{background-color: #000;
+border-radius: 40px;
+color: #fff;
+}
+.Buznex h1{
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 50px;
+}
+.Buznex p{
+    color: #808080;
+}
+
+.Buznex p a{
+    text-decoration: none;
+    color: #808080;
+}
+.copyright p{
+    color: #808080;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 60px;
+}
+.copyright span{
+    color: #ff0000;
+}
